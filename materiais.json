@@ -5,7 +5,7 @@
     "evento": "Latinoware 2024",
     "categoria": "Palestras",
     "ano": 2024,
-    "arquivo": "pdfs/latinoware-2024-seguranca-da-informacao.pdf",
+    "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf",
     "tags": ["cibersegurança", "carreira"]
   },
   {
@@ -14,7 +14,7 @@
     "evento": "Latinoware 2020",
     "categoria": "Palestras",
     "ano": 2020,
-    "arquivo": "pdfs/latinoware-2020-seguranca-da-informacao.pdf",
+    "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser-1.0.pdf",
     "tags": ["cibersegurança"]
   },
   {
@@ -23,7 +23,7 @@
     "evento": "Latinoware 2013",
     "categoria": "Palestras",
     "ano": 2013,
-    "arquivo": "pdfs/latinoware-2013-software-livre-e-educacao.pdf",
+    "arquivo": "pdfs/Latinoware2013.pdf",
     "tags": ["software livre", "educação"]
   }
 ]
