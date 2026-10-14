@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materiais complementares · Ubiratan Zakaib do Nascimento</title>
+  <meta name="description" content="Slides, guias e materiais de apoio das palestras e vídeos de Ubiratan Zakaib do Nascimento sobre Linux, Software Livre, Infraestrutura, Cloud e Cibersegurança.">
+  <meta name="theme-color" content="#2563eb">
+  <!-- Para NÃO aparecer no Google, remova os comentários da linha abaixo -->
+  <!-- <meta name="robots" content="noindex"> -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Materiais complementares · ONucleo">
+  <meta property="og:description" content="Slides, guias e referências das palestras e vídeos, em PDF.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="pular" href="#lista">Ir para os materiais</a>
+
+  <header class="topo">
+    <div class="wrap topo__in">
+      <a class="marca" href="https://www.onucleo.com.br">ONucleo</a>
+      <nav class="topo__links" aria-label="Links externos">
+        <a href="https://www.onucleo.com.br">Site</a>
+        <a href="https://www.youtube.com/birazn" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://github.com/birazn" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Materiais complementares</p>
+        <h1>Slides, guias e referências das <span>palestras e vídeos</span></h1>
+        <p class="lead">
+          Conteúdo de apoio sobre Linux, Software Livre, Infraestrutura, Cloud e Cibersegurança, em PDF.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap conteudo">
+      <div class="controles">
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
+        <label class="busca">
+          <span class="sr">Buscar material</span>
+          <input type="search" id="busca" placeholder="Buscar material…" autocomplete="off">
+        </label>
+      </div>
+
+      <p class="contador" id="contador" aria-live="polite"></p>
+
+      <ul class="grade" id="lista"></ul>
+
+      <noscript>
+        <p class="vazio">Ative o JavaScript para ver a lista ou acesse os arquivos direto em
+          <a href="https://github.com/birazn/materiais/tree/main/pdfs">github.com/birazn/materiais</a>.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap rodape__in">
+      <p>© <span id="ano">2026</span> Ubiratan Zakaib do Nascimento</p>
+      <p><a href="https://www.onucleo.com.br">← Voltar ao site</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

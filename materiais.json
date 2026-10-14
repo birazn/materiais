@@ -1,0 +1,29 @@
+[
+  {
+    "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)",
+    "descricao": "Slides da palestra apresentada na Latinoware, voltada a quem está iniciando na carreira em segurança da informação.",
+    "evento": "Latinoware 2024",
+    "categoria": "Palestras",
+    "ano": 2024,
+    "arquivo": "pdfs/latinoware-2024-seguranca-da-informacao.pdf",
+    "tags": ["cibersegurança", "carreira"]
+  },
+  {
+    "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão",
+    "descricao": "Slides da palestra apresentada na Latinoware. A gravação está disponível no canal do YouTube.",
+    "evento": "Latinoware 2020",
+    "categoria": "Palestras",
+    "ano": 2020,
+    "arquivo": "pdfs/latinoware-2020-seguranca-da-informacao.pdf",
+    "tags": ["cibersegurança"]
+  },
+  {
+    "titulo": "Software Livre e Educação",
+    "descricao": "Slides da palestra sobre o uso de Software Livre no ambiente educacional.",
+    "evento": "Latinoware 2013",
+    "categoria": "Palestras",
+    "ano": 2013,
+    "arquivo": "pdfs/latinoware-2013-software-livre-e-educacao.pdf",
+    "tags": ["software livre", "educação"]
+  }
+]
