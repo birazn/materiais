@@ -5,7 +5,7 @@
     "evento": "ferpaTechDay 2026",
     "categoria": "Tutorial",
     "ano": 2026,
-    "arquivo": "pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf",
+    "arquivo": "mds/Tutorial_guardrails_promptinjection.md",
     "tags": ["cibersegurança", "promptinjection"]
   },
   {
