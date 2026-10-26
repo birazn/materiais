@@ -5,8 +5,8 @@
     "evento": "ferpaTechDay 2026",
     "categoria": "Tutorial",
     "ano": 2026,
-    "arquivo": "hhttps://prof-birazn.notion.site/Tutorial-implementando-guardrails-contra-prompt-injection-7f5a495a7e7f822bba45012f01e5aa04",
-    "tags": ["cibersegurança", "promptinjection", "Notion"]
+    "arquivo": "https://github.com/birazn/materiais/blob/main/mds/Tutorial_guardrails_promptinjection.md",
+    "tags": ["cibersegurança", "promptinjection"]
   },
   {
     "titulo": "Segurança na Era dos LLMs: do, prompt injection à governaça de agentes",
