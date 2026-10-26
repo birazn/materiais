@@ -4,7 +4,7 @@ Oct 24, 2026 · @Ubiratan Zakaib do Nascimento
 
 ## Visão geral
 
-![fluxo-guardrails.svg](imgs/fluxo-guardrails.svg)
+![fluxo-guardrails.svg](../imgs/fluxo-guardrails.svg)
 
 A mensagem do usuário percorre as camadas na ordem do diagrama: a Camada 1 barra ataques conhecidos antes do modelo, a Camada 2 organiza o `prompt`, e a Camada 3 impede que o segredo saia na resposta, mesmo que o ataque tenha enganado o modelo.
 
@@ -417,7 +417,3 @@ A ideia é o **menor privilégio**: a ferramenta só enxerga o que o usuário lo
 - **Use bibliotecas prontas** quando a regex não bastar: Guardrails AI, NeMo Guardrails, LLM Guard e as APIs de moderação dos provedores.
 
 ## Dúvidas?
-
-:instagram: [@birazn](https://www.instagram.com/birazn) :youtube: [Canal YouTube](https://www.youtube.com/birazn) :telegrama: [t.me/birazn](http://t.me/birazn) 🔗 [onucleo.com.br](http://onucleo.com.br)
-
-![social.png](imgs/social.png)
