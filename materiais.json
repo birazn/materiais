@@ -1,12 +1,21 @@
 [
     {
     "titulo": "Segurança na Era dos LLMs: do, prompt injection à governaça de agentes",
+    "descricao": "Material pratico guiando sobre a implementação de GuardRais.",
+    "evento": "ferpaTechDay 2026",
+    "categoria": "Tutorial",
+    "ano": 2026,
+    "arquivo": "pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf",
+    "tags": ["cibersegurança", "promptinjection"]
+  },
+  {
+    "titulo": "Segurança na Era dos LLMs: do, prompt injection à governaça de agentes",
     "descricao": "Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos listados no Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.",
     "evento": "ferpaTechDay 2026",
     "categoria": "Palestras",
     "ano": 2026,
     "arquivo": "pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf",
-    "tags": ["cibersegurança", "carreira"]
+   "tags": ["cibersegurança", "promptinjection"]
   },
   {
     "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)",
