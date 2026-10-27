@@ -417,3 +417,7 @@ A ideia é o **menor privilégio**: a ferramenta só enxerga o que o usuário lo
 - **Use bibliotecas prontas** quando a regex não bastar: Guardrails AI, NeMo Guardrails, LLM Guard e as APIs de moderação dos provedores.
 
 ## Dúvidas?
+
+> [@birazn](https://www.instagram.com/birazn) | [Canal YouTube](https://www.youtube.com/birazn) | [ONucleo](https://www.onucleo.com.br) | [Telegram](https://t.me/birazn)
+
+<img style="text-align: left" width="30%" src="../imgs/social.png" />
