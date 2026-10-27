@@ -652,11 +652,14 @@ def gerar_pagina_palestra(item: dict) -> str:
         meta = " · ".join(meta_partes)
 
         if tipo == "tutorial":
+            html_tutorial = md_para_html(MDS_DIR / arquivo) if arquivo else ""
+            # Ajusta caminhos relativos de imagem para a pagina m/<slug>/ (dois niveis acima)
+            html_tutorial = html_tutorial.replace('src="../imgs/', 'src="../../imgs/')
             recursos_detalhe += (
                 f'<div class="recurso">'
                 f'<h3>{rotulo}</h3>'
                 f'<p>Leia o tutorial direto no site:</p>'
-                f'<div class="conteudo-md">{md_para_html(MDS_DIR / arquivo) if arquivo else ""}</div>'
+                f'<div class="conteudo-md">{html_tutorial}</div>'
                 f'</div>'
             )
         else:
