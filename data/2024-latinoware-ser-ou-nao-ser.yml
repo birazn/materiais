@@ -1,0 +1,17 @@
+id: 2024-latinoware-ser-ou-nao-ser
+titulo: "Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)"
+evento: "Latinoware 2024"
+ano: 2024
+tema:
+  - Cibersegurança
+  - Carreira
+descricao: "Slides da palestra apresentada na Latinoware, voltada a quem está iniciando na carreira em segurança da informação."
+resumo_longo: |
+  Slides da palestra apresentada na Latinoware 2024, voltada a quem está iniciando na carreira em segurança da informação.
+video: ""
+repositorio: ""
+destaque: false
+recursos:
+  - tipo: slides
+    rotulo: "Slides (PDF)"
+    arquivo: pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf

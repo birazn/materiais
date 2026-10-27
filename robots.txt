@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://birazn.github.io/materiais/sitemap.xml

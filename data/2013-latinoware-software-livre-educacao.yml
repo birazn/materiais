@@ -1,0 +1,17 @@
+id: 2013-latinoware-software-livre-educacao
+titulo: "Software Livre e Educação"
+evento: "Latinoware 2013"
+ano: 2013
+tema:
+  - Software Livre
+  - Educação
+descricao: "Slides da palestra sobre o uso de Software Livre no ambiente educacional."
+resumo_longo: |
+  Slides da palestra sobre o uso de Software Livre no ambiente educacional, apresentada na Latinoware 2013.
+video: ""
+repositorio: ""
+destaque: false
+recursos:
+  - tipo: slides
+    rotulo: "Slides (PDF)"
+    arquivo: pdfs/Latinoware2013.pdf

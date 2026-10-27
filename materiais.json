@@ -1,47 +1,89 @@
-[
-  {
-    "titulo": "Segurança na Era dos LLMs: do, prompt injection à governaça de agentes",
-    "descricao": "Material pratico guiando sobre a implementação de GuardRais.",
-    "evento": "ferpaTechDay 2026",
-    "categoria": "Tutorial",
-    "ano": 2026,
-    "arquivo": "https://github.com/birazn/materiais/blob/main/mds/Tutorial_guardrails_promptinjection.md",
-    "tags": ["cibersegurança", "promptinjection"]
-  },
-  {
-    "titulo": "Segurança na Era dos LLMs: do, prompt injection à governaça de agentes",
-    "descricao": "Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos listados no Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.",
-    "evento": "ferpaTechDay 2026",
-    "categoria": "Palestras",
-    "ano": 2026,
-    "arquivo": "pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf",
-   "tags": ["cibersegurança", "promptinjection"]
-  },
-  {
-    "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)",
-    "descricao": "Slides da palestra apresentada na Latinoware, voltada a quem está iniciando na carreira em segurança da informação.",
-    "evento": "Latinoware 2024",
-    "categoria": "Palestras",
-    "ano": 2024,
-    "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf",
-    "tags": ["cibersegurança", "carreira"]
-  },
-  {
-    "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão",
-    "descricao": "Slides da palestra apresentada na Latinoware. A gravação está disponível no canal do YouTube.",
-    "evento": "Latinoware 2020",
-    "categoria": "Palestras",
-    "ano": 2020,
-    "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser-1.0.pdf",
-    "tags": ["cibersegurança"]
-  },
-  {
-    "titulo": "Software Livre e Educação",
-    "descricao": "Slides da palestra sobre o uso de Software Livre no ambiente educacional.",
-    "evento": "Latinoware 2013",
-    "categoria": "Palestras",
-    "ano": 2013,
-    "arquivo": "pdfs/Latinoware2013.pdf",
-    "tags": ["software livre", "educação"]
-  }
-]
+{
+  "gerado_em": "2026-10-26T00:00:00Z",
+  "base_url": "https://birazn.github.io/materiais",
+  "itens": [
+    {
+      "id": "2026-ferpatechday-prompt-injection",
+      "titulo": "Segurança na Era dos LLMs: do prompt injection à governança de agentes",
+      "descricao": "Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.",
+      "evento": "ferpaTechDay 2026",
+      "data": null,
+      "ano": 2026,
+      "tema": ["Cibersegurança", "IA"],
+      "url": "https://birazn.github.io/materiais/m/2026-ferpatechday-prompt-injection/",
+      "destaque": true,
+      "recursos": [
+        {
+          "tipo": "slides",
+          "rotulo": "Slides (PDF)",
+          "arquivo": "pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf",
+          "url": "https://birazn.github.io/materiais/pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf"
+        },
+        {
+          "tipo": "tutorial",
+          "rotulo": "Tutorial (Markdown)",
+          "arquivo": "mds/2026-ferpatechday-guardrails.md",
+          "url": "https://birazn.github.io/materiais/m/2026-ferpatechday-prompt-injection/#tutorial"
+        }
+      ]
+    },
+    {
+      "id": "2024-latinoware-ser-ou-nao-ser",
+      "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)",
+      "descricao": "Slides da palestra apresentada na Latinoware, voltada a quem está iniciando na carreira em segurança da informação.",
+      "evento": "Latinoware 2024",
+      "data": null,
+      "ano": 2024,
+      "tema": ["Cibersegurança", "Carreira"],
+      "url": "https://birazn.github.io/materiais/m/2024-latinoware-ser-ou-nao-ser/",
+      "destaque": false,
+      "recursos": [
+        {
+          "tipo": "slides",
+          "rotulo": "Slides (PDF)",
+          "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf",
+          "url": "https://birazn.github.io/materiais/pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2020-latinoware-ser-ou-nao-ser",
+      "titulo": "Segurança da Informação: Ser ou Não ser, eis a questão",
+      "descricao": "Slides da palestra apresentada na Latinoware. A gravação está disponível no canal do YouTube.",
+      "evento": "Latinoware 2020",
+      "data": null,
+      "ano": 2020,
+      "tema": ["Cibersegurança"],
+      "url": "https://birazn.github.io/materiais/m/2020-latinoware-ser-ou-nao-ser/",
+      "destaque": false,
+      "video": "https://www.youtube.com/watch?v=p2hh7NmLwrA",
+      "recursos": [
+        {
+          "tipo": "slides",
+          "rotulo": "Slides (PDF)",
+          "arquivo": "pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser-1.0.pdf",
+          "url": "https://birazn.github.io/materiais/pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser-1.0.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2013-latinoware-software-livre-educacao",
+      "titulo": "Software Livre e Educação",
+      "descricao": "Slides da palestra sobre o uso de Software Livre no ambiente educacional.",
+      "evento": "Latinoware 2013",
+      "data": null,
+      "ano": 2013,
+      "tema": ["Software Livre", "Educação"],
+      "url": "https://birazn.github.io/materiais/m/2013-latinoware-software-livre-educacao/",
+      "destaque": false,
+      "recursos": [
+        {
+          "tipo": "slides",
+          "rotulo": "Slides (PDF)",
+          "arquivo": "pdfs/Latinoware2013.pdf",
+          "url": "https://birazn.github.io/materiais/pdfs/Latinoware2013.pdf"
+        }
+      ]
+    }
+  ]
+}

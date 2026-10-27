@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Segurança na Era dos LLMs: do prompt injection à governança de agentes · Materiais complementares</title>
+  <meta name="description" content="Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Segurança na Era dos LLMs: do prompt injection à governança de agentes · Ubiratan Zakaib do Nascimento">
+  <meta property="og:description" content="Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.">
+  <meta property="og:url" content="https://birazn.github.io/materiais/m/2026-ferpatechday-prompt-injection/">
+  <meta property="og:image" content="https://birazn.github.io/materiais/imgs/social.png">
+
+  <link rel="canonical" href="https://birazn.github.io/materiais/m/2026-ferpatechday-prompt-injection/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../../assets/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Segurança na Era dos LLMs: do prompt injection à governança de agentes",
+    "startDate": "",
+    "location": "ferpaTechDay 2026",
+    "description": "Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.",
+    "url": "https://birazn.github.io/materiais/m/2026-ferpatechday-prompt-injection/"
+  }
+  </script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="wrap topo__in">
+      <a class="marca" href="../../">
+        <img src="../../imgs/logo-onucleo.png" alt="ONúcleo — Misturando Tecnologia e Educação" width="180" height="48"/>
+      </a>
+      <nav class="topo__links" aria-label="Links externos">
+        <a href="../../">Materiais</a>
+        <a href="https://www.youtube.com/birazn" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://github.com/birazn" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap conteudo" id="conteudo">
+      <nav class="paginacao"><a href="../../">← Voltar aos materiais</a></nav>
+
+      <article class="palestra">
+        <div class="capa-qr">
+          <img src="../../qr/2026-ferpatechday-prompt-injection.png" alt="QR code da página" width="120" height="120"/>
+          <p class="qr-legenda">Leia com o celular para abrir esta página</p>
+        </div>
+
+        <h1>Segurança na Era dos LLMs: do prompt injection à governança de agentes</h1>
+        <div class="meta-evento">
+          <span class="ano">2026</span>
+          <span class="evento">ferpaTechDay 2026</span>
+          <span class="chip tema">Cibersegurança</span>
+          <span class="chip tema">IA</span>
+        </div>
+
+        <p class="lead">Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.</p>
+
+        <div class="resumo-longo">
+          <h3>Resumo completo</h3>
+          <p>Material prático para guiar a implementação de Guardrails. Aborda os riscos listados no Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.</p>
+        </div>
+
+        <h2>Recursos</h2>
+        <div class="recursos-lista">
+          <div class="recurso">
+            <h3>Slides (PDF)</h3>
+            <p>slides · PDF</p>
+            <a class="btn" href="../../pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf" target="_blank" rel="noopener" download>Abrir arquivo</a>
+          </div>
+          <div class="recurso">
+            <h3>Tutorial (Markdown)</h3>
+            <p>Leia o tutorial direto no site:</p>
+            <div class="conteudo-md" id="tutorial">
+<pre># Tutorial implementando guardrails contra prompt injection
+
+Oct 24, 2026 · @Ubiratan Zakaib do Nascimento
+
+## Visão geral
+
+![fluxo-guardrails.svg](../imgs/fluxo-guardrails.svg)
+
+A mensagem do usuário percorre as camadas na ordem do diagrama: a Camada 1 barra ataques conhecidos antes do modelo, a Camada 2 organiza o `prompt`, e a Camada 3 impede que o segredo saia na resposta, mesmo que o ataque tenha enganado o modelo.
+
+Nos passos abaixo, você escreve cada camada em um bloco de código. No final, executa o programa e lê a saída.
+
+## Pré-requisitos
+
+Você precisa só de Python 3 e um editor de texto. O projeto não usa bibliotecas externas nem chave de API, então não há nada para instalar.
+
+1. Confira a versão do Python no terminal:
+
+\`\`\`bash
+python3 --version
+\`\`\`
+
+(...conteúdo completo do tutorial em mds/2026-ferpatechday-guardrails.md...)
+
+## Dúvidas?</pre>
+<p><em>Nota: este é um resumo inicial. O tutorial completo será renderizado em HTML na próxima execução do build. Acesse o arquivo original em <a href="../../mds/2026-ferpatechday-guardrails.md" target="_blank" rel="noopener">mds/2026-ferpatechday-guardrails.md</a>.</em></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap rodape__in">
+      <p>© <span id="ano">2026</span> Ubiratan Zakaib do Nascimento</p>
+      <p>
+        <a href="../../">← Voltar aos materiais</a> ·
+        <a href="https://www.onucleo.com.br/contato">Convide para sua palestra</a>
+      </p>
+      <p class="licenca">Materiais sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("ano").textContent = new Date().getFullYear();</script>
+</body>
+</html>
