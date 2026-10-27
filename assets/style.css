@@ -173,8 +173,8 @@ a { color: var(--acento); text-decoration: none; }
 
 /* ===== Rodapé ===== */
 .rodape { border-top: 1px solid var(--borda); padding: 24px 0; font-size: 14px; color: var(--suave); }
-.rodape__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
-.rodape p { margin: 0; }
+.rodape__in { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px; text-align: center; }
+.rodape__in > p { margin: 0; }
 .licenca { font-size: 13px; color: var(--suave); }
 
 /* ===== Movimento ===== */

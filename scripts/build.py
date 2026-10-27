@@ -377,13 +377,13 @@ def card_html(item: dict) -> str:
     descricao = esc_html(item.get("descricao", ""))
     tema = item.get("tema", [])
     chips_tema = "".join(
-        f'<span class="chip">{esc_html(t)}</span>' for t in tema
+        f'<span class="chip tema" data-tema="{esc_html(t)}">{esc_html(t)}</span>' for t in tema
     )
     categorias = item.get("categorias", item.get("categoria", ""))
     if isinstance(categorias, str):
         categorias = [categorias]
     chips_cat = "".join(
-        f'<span class="chip">{esc_html(c)}</span>' for c in categorias
+        f'<span class="chip" data-cat="{esc_html(c)}">{esc_html(c)}</span>' for c in categorias
     )
 
     # Recursos (botoes no card)
