@@ -6,16 +6,12 @@
   <title>Materiais complementares · Ubiratan Zakaib do Nascimento</title>
   <meta name="description" content="Slides, guias e materiais de apoio das palestras e vídeos de Ubiratan Zakaib do Nascimento sobre Linux, Software Livre, Infraestrutura, Cloud e Cibersegurança.">
   <meta name="theme-color" content="#2563eb">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Materiais complementares · Ubiratan Zakaib do Nascimento">
+  <meta property="og:title" content="Materiais complementares · ONucleo">
   <meta property="og:description" content="Slides, guias e referências das palestras e vídeos, em PDF.">
-  <meta property="og:url" content="https://birazn.github.io/materiais/">
-  <meta property="og:image" content="https://birazn.github.io/materiais/imgs/social.png">
 
-  <link rel="canonical" href="https://birazn.github.io/materiais/">
-  <link rel="alternate" type="application/feed+json" title="Feed de materiais" href="https://birazn.github.io/materiais/feed.json">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -24,9 +20,7 @@
 
   <header class="topo">
     <div class="wrap topo__in">
-      <a class="marca" href="https://www.onucleo.com.br">
-        <img src="imgs/logo-onucleo.png" alt="ONúcleo — Misturando Tecnologia e Educação" width="180" height="48"/>
-      </a>
+      <a class="marca" href="https://www.onucleo.com.br"><img src="https://onucleo.com.br/wp-content/uploads/2026/10/logo_2025.png" width="20%"/></a>
       <nav class="topo__links" aria-label="Links externos">
         <a href="https://www.onucleo.com.br">Site</a>
         <a href="https://www.youtube.com/birazn" target="_blank" rel="noopener">YouTube</a>
@@ -48,23 +42,7 @@
 
     <section class="wrap conteudo">
       <div class="controles">
-        <div class="filtros" role="group" aria-label="Filtrar">
-          <div id="filtros-cat" class="filtro-grupo">
-            <span class="filtro-label">Categoria</span>
-            <button type="button" data-cat="Todos">Todos</button>
-            <button type="button" data-cat="Palestras">Palestras</button>
-            <button type="button" data-cat="Tutorial">Tutorial</button>
-          </div>
-          <div id="filtros-tema" class="filtro-grupo">
-            <span class="filtro-label">Tema</span>
-            <button type="button" data-tema="Todos">Todos</button>
-            <button type="button" data-tema="Cibersegurança">Cibersegurança</button>
-            <button type="button" data-tema="IA">IA</button>
-            <button type="button" data-tema="Carreira">Carreira</button>
-            <button type="button" data-tema="Software Livre">Software Livre</button>
-            <button type="button" data-tema="Educação">Educação</button>
-          </div>
-        </div>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
         <label class="busca">
           <span class="sr">Buscar material</span>
           <input type="search" id="busca" placeholder="Buscar material…" autocomplete="off">
@@ -73,64 +51,10 @@
 
       <p class="contador" id="contador" aria-live="polite"></p>
 
-      <ul class="grade" id="lista">
-        <li class="card card--destaque" data-id="2026-ferpatechday-prompt-injection">
-          <div class="card__topo">
-            <span class="chip" data-cat="Palestras">Palestras</span><span class="chip">Tutorial</span><span class="ano">2026</span>
-          </div>
-          <h2 class="card__titulo">Segurança na Era dos LLMs: do prompt injection à governança de agentes</h2>
-          <p class="card__evento">ferpaTechDay 2026</p>
-          <p class="card__desc">Slides da palestra apresentada no ferpaTechDay - Codinferpa, abordando os riscos do Top 10 da OWASP para LLMs, focando em ataques de prompt injection, exfiltração de dados confidenciais por prompts, governança de modelos proprietários e estratégias para implementar Guardrails.</p>
-          <div class="card__tema"><span class="chip tema" data-tema="Cibersegurança">Cibersegurança</span><span class="chip tema" data-tema="IA">IA</span></div>
-          <div class="card__recursos">
-            <a class="btn" href="pdfs/ferpaTechDay_Ubiratan_Prompt_Injection.pdf" target="_blank" rel="noopener">Slides (PDF)</a>
-            <span class="meta">slides · PDF</span>
-            <a class="btn btn--tut" href="m/2026-ferpatechday-prompt-injection/#tutorial">Tutorial (Markdown)</a>
-          </div>
-        </li>
-        <li class="card" data-id="2024-latinoware-ser-ou-nao-ser">
-          <div class="card__topo">
-            <span class="chip" data-cat="Palestras">Palestras</span><span class="ano">2024</span>
-          </div>
-          <h2 class="card__titulo">Segurança da Informação: Ser ou Não ser, eis a questão (v1.4)</h2>
-          <p class="card__evento">Latinoware 2024</p>
-          <p class="card__desc">Slides da palestra apresentada na Latinoware, voltada a quem está iniciando na carreira em segurança da informação.</p>
-          <div class="card__tema"><span class="chip tema" data-tema="Cibersegurança">Cibersegurança</span><span class="chip tema" data-tema="Carreira">Carreira</span></div>
-          <div class="card__recursos">
-            <a class="btn" href="pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser.pdf" target="_blank" rel="noopener" download>Slides (PDF)</a>
-            <span class="meta">slides · PDF</span>
-          </div>
-        </li>
-        <li class="card" data-id="2020-latinoware-ser-ou-nao-ser">
-          <div class="card__topo">
-            <span class="chip" data-cat="Palestras">Palestras</span><span class="ano">2020</span>
-          </div>
-          <h2 class="card__titulo">Segurança da Informação: Ser ou Não ser, eis a questão</h2>
-          <p class="card__evento">Latinoware 2020</p>
-          <p class="card__desc">Slides da palestra apresentada na Latinoware. A gravação está disponível no canal do YouTube.</p>
-          <div class="card__tema"><span class="chip tema" data-tema="Cibersegurança">Cibersegurança</span></div>
-          <div class="card__recursos">
-            <a class="btn" href="pdfs/Ubiratan_Zakaib_do_Nascimento-Ser-ou-nao-ser-1.0.pdf" target="_blank" rel="noopener" download>Slides (PDF)</a>
-            <span class="meta">slides · PDF</span>
-          </div>
-        </li>
-        <li class="card" data-id="2013-latinoware-software-livre-educacao">
-          <div class="card__topo">
-            <span class="chip" data-cat="Palestras">Palestras</span><span class="ano">2013</span>
-          </div>
-          <h2 class="card__titulo">Software Livre e Educação</h2>
-          <p class="card__evento">Latinoware 2013</p>
-          <p class="card__desc">Slides da palestra sobre o uso de Software Livre no ambiente educacional.</p>
-          <div class="card__tema"><span class="chip tema" data-tema="Software Livre">Software Livre</span><span class="chip tema" data-tema="Educação">Educação</span></div>
-          <div class="card__recursos">
-            <a class="btn" href="pdfs/Latinoware2013.pdf" target="_blank" rel="noopener" download>Slides (PDF)</a>
-            <span class="meta">slides · PDF</span>
-          </div>
-        </li>
-      </ul>
+      <ul class="grade" id="lista"></ul>
 
       <noscript>
-        <p class="vazio">O JavaScript esta desativado. Voce ainda pode acessar os arquivos direto em
+        <p class="vazio">Ative o JavaScript para ver a lista ou acesse os arquivos direto em
           <a href="https://github.com/birazn/materiais/tree/main/pdfs">github.com/birazn/materiais</a>.</p>
       </noscript>
     </section>
@@ -139,14 +63,10 @@
   <footer class="rodape">
     <div class="wrap rodape__in">
       <p>© <span id="ano">2026</span> Ubiratan Zakaib do Nascimento</p>
-      <p>
-        <a href="https://www.onucleo.com.br/contato">Convide para sua palestra</a> ·
-        <a href="https://www.onucleo.com.br">← Voltar ao site</a>
-      </p>
-      <p class="licenca">Materiais sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+      <p><a href="https://www.onucleo.com.br">← Voltar ao site</a></p>
     </div>
   </footer>
 
-  <script defer src="assets/app.js"></script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>
